@@ -1,7 +1,6 @@
 # PhD_CV_minimalism_template
 
-
-This is a clean LaTeX CV template for graduate students and early-career researchers.
+This is a clean LaTeX CV template for graduate students and early-career researchers. I polished it and adjusted the font and spacing for each section.
 
 ## Use on Overleaf
 
@@ -10,3 +9,7 @@ Upload this repository as a ZIP file to Overleaf, or open the shared Overleaf pr
 ## License
 
 MIT License
+
+
+Author: Hanyi Xu, PhD Student, Florida State University
+Date: June 2026
