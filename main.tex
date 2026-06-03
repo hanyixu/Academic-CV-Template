@@ -1,0 +1,66 @@
+\documentclass[11pt, letterpaper]{article}
+
+%================== PACKAGES AND FORMAT =================
+
+\input{__preamble}
+
+%================== DOCUMENT BEGIN =================
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+
+%================== HEADER =================
+
+\input{header}
+
+%================== EDUCATION =================
+
+\input{education}
+
+%================== PUBLICATION =================
+
+\input{publication}
+
+%================== RESEARCH EXPERIENCE =================
+
+\input{research_experience}
+
+%================== TEACHING ASSISTANTSHIP =================
+
+\input{teaching}
+
+%================== ACADEMIC AND VOLUNTEER SERVICE =================
+
+\input{service}
+
+%================== HONORS & AWARDS =================
+
+\input{award}
+
+%================== SKILLS =================
+
+\input{skills}
+
+%================== LICENCES & CERTIFICATIONS =================
+
+\input{certifications}
+
+%================== PROFESSIONAL EXPERIENCE =================
+
+\input{industry_experience}
+
+%================== LANGUAGE =================
+
+\input{language}
+
+%================== LAST UPDATE =================
+
+\vspace{3em}
+
+
+\end{document}
