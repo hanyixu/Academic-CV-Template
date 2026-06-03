@@ -1,4 +1,6 @@
-# PhD_CV_minimalism_template
+# PhD CV template
+
+## A minimalism CV template for PhD
 
 This is a clean LaTeX CV template for graduate students and early-career researchers. I polished it and adjusted the font and spacing for each section.
 
