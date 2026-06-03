@@ -1,6 +1,6 @@
 # PhD CV template
 
-preview: [CV Template Preview](https://hanyixu.com/files/CV_Template.pdf)
+Preview: [CV Template Preview](https://hanyixu.com/files/CV_Template.pdf)
 
 ## A minimalism CV template for PhD
 
