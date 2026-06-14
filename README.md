@@ -17,5 +17,8 @@ Upload this repository as a ZIP file to Overleaf, or open the shared Overleaf pr
 MIT License
 
 
-Author: Hanyi Xu, PhD Student, Florida State University
+Author: <br>
+Hanyi Xu <br>
+PhD Student <br>
+Florida State University <br> <br>
 Date: June 2026
