@@ -1,6 +1,6 @@
 # PhD CV template
 
-![Uploading image.png…]()
+![Preview](preview.png)
 
 Preview: [CV Template Preview](https://hanyixu.com/files/CV_Template.pdf)
 
