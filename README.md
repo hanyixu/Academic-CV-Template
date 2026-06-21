@@ -1,26 +1,31 @@
-# PhD CV template
+# Academic CV Template
 
-![Preview](preview.png)
+A clean academic CV template for graduate students, PhD applicants, recent graduates, and early-career researchers.
 
-Preview: [CV Template Preview](https://hanyixu.com/files/CV_Template.pdf)
+<p align="center">
+  <img src="preview.png" alt="Academic CV Template Preview" width="700">
+</p>
 
-Word: refer to CV_Template_word v1.0 in the repo.
+## Preview
 
-## A minimalism CV template for PhD
+[View PDF Preview](https://hanyixu.com/files/CV_Template.pdf)
 
-This is a clean LaTeX CV template for graduate students and early-career researchers. I polished it and adjusted the font and spacing for each section.
+## What is included
 
-## Use on Overleaf
+- LaTeX CV template
+- Word version
+- Editable sections for education, publications, research, teaching, service, awards, skills, and languages
+- Simple structure for academic applications and research-oriented job searches
 
-Upload this repository as a ZIP file to Overleaf, or open the shared Overleaf project link.
+## Who can use it
+
+This template is suitable for graduate school applications, PhD applications, academic CVs, research positions, fellowships, and early-career job searches.
+
+## How to use
+
+Upload the files to Overleaf and edit `main.tex` and the section files.  
+You can also use the Word version if you prefer Microsoft Word.
 
 ## License
 
 MIT License
-
-
-Author: <br>
-Hanyi Xu <br>
-PhD Student <br>
-Florida State University <br> <br>
-Date: June 2026
