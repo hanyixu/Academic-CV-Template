@@ -1,5 +1,7 @@
 # PhD CV template
 
+![Uploading image.png…]()
+
 Preview: [CV Template Preview](https://hanyixu.com/files/CV_Template.pdf)
 
 Word: refer to CV_Template_word v1.0 in the repo.
