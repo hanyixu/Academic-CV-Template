@@ -123,18 +123,48 @@
     \par\kern\topsep
 }
 
+% ===== citelist: DESCENDING (reverse) numbering, fully automatic =====
+% Newest item on top gets the highest number, counting down to [1].
+% A "group" is a citelist plus any following citelist[resume]s; each group's
+% total item count is discovered automatically and cached in the .aux file, so
+% you NEVER edit a number by hand. (Needs two compiles, like any \ref/\label --
+% latexmk and Overleaf do that automatically.)
+\makeatletter
+\newcounter{citegroup}                  % which group we are in
+\newcommand{\citetotal}{9999}           % current group's total (filled from .aux)
+\protected\def\revlabel{[\number\numexpr\citetotal-\value{citelisti}+1\relax]}
+\newcommand{\setcitetotal}[2]{\global\@namedef{citegrouptotal#1}{#2}} % .aux callback
+\let\cite@rerun\relax
+\AtEndDocument{\cite@rerun}
 \newlist{citelist}{enumerate}{1}
 \setlist[citelist]{
-    label={[{\arabic*}]},
-    leftmargin=*,
+    label=\revlabel,
     align=left,
+    labelwidth=1.9em,   % explicit width so enumitem skips its counter-based auto-calc
     labelsep=1.5em,
+    leftmargin=3.4em,   % labelwidth + labelsep (hanging indent for wrapped lines)
     itemsep=2pt,
     topsep=5pt,
     parsep=0pt,
     partopsep=0pt,
-    listparindent=0pt
+    listparindent=0pt,
+    before={% a reset counter (=0) means this citelist STARTS a new group
+      \ifnum\value{citelisti}=0
+        \stepcounter{citegroup}%
+        \ifcsname citegrouptotal\thecitegroup\endcsname
+          \xdef\citetotal{\csname citegrouptotal\thecitegroup\endcsname}%
+        \else
+          \gdef\citetotal{9999}% unknown on first pass -> request a rerun
+          \gdef\cite@rerun{\@latex@warning@no@line
+            {Publication numbering changed -- rerun LaTeX to fix it}}%
+        \fi
+      \fi
+    },
+    after={% cache this group's running total (the last write per group wins)
+      \immediate\write\@auxout{\string\setcitetotal{\thecitegroup}{\arabic{citelisti}}}%
+    }
 }
+\makeatother
 
 \newcommand{\placelastupdatedtext}{
     \par         % Ensure we are in a new paragraph
